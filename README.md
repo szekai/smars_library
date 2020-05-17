@@ -1,4 +1,4 @@
-# SMARS
+# SMARS (this is a clone version for personal use only, please visit https://github.com/kevinmcaleer/smars_library for original copy)
 
 Screwless Modular Assemblable Robotic System
 
