@@ -28,7 +28,7 @@ import time
 import logging
 import Adafruit_PCA9685
 # from constants import Channel
-from constants import Channel
+from smars_library.constants import Channel
 logging.basicConfig(level=logging.CRITICAL)
 logging.propagate = False
 
@@ -335,13 +335,13 @@ class SmarsRobot(object):
 
     # add each leg to the legs array
     legs.append(Leg(name='left_leg_front', channel=0,
-                    leg_minangle=9, leg_maxangle=90, invert=True))
+                    leg_minangle=90, leg_maxangle=180, invert=True))
     legs.append(Leg(name='left_leg_back', channel=2,
                     leg_minangle=90, leg_maxangle=180, invert=False))
     legs.append(Leg(name='right_leg_front', channel=6,
                     leg_minangle=90, leg_maxangle=180, invert=False))
     legs.append(Leg(name='right_leg_back', channel=4,
-                    leg_minangle=9, leg_maxangle=90, invert=True))
+                    leg_minangle=90, leg_maxangle=180, invert=True))
     # print "number of legs", len(legs)
 
     def setname(self, name):
